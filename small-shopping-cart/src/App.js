@@ -8,6 +8,8 @@ function App() {
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
+    // let cartshow=JSON.parse(localStorage.getItem('ShoppingCart'))
+    // console.log(cartshow)
     if (exist) {
       setCartItems(
         cartItems.map((x) =>
