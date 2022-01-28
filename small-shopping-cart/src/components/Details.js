@@ -5,6 +5,9 @@ export default function Details(props) {
   const itemsPrice = cartItems.reduce((a, c) => a + c.qty * c.price, 0);
 
   const totalPrice = itemsPrice ;
+  // localStorage.setItem('ShoppingCart',JSON.stringify(cartItems.id));
+  // localStorage.setItem('ShoppingCart',JSON.stringify(cartItems));
+  // console.log(localStorage)
   
   return (
     <aside className="block col-1">
